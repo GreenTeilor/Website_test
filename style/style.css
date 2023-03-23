@@ -4,7 +4,7 @@ body {
 }
 
 /*HEADER BEGIN*/
-header{
+header {
   position: fixed;
   top: 0;
   Left: 0;
@@ -18,190 +18,93 @@ header{
   box-sizing: border-box;
 }
 
-header .header_logo{
-width: 70px;
-position: relative;
-font-size: 1.5em;
-color: aliceblue;
-text-decoration: none;
-font-weight: 600;
-box-sizing: border-box;
-}
-header .navigation{
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-margin: 10px 0;
+header .header_logo {
+  width: 70px;
+  position: relative;
+  font-size: 1.5em;
+  color: aliceblue;
+  text-decoration: none;
+  font-weight: 600;
+  box-sizing: border-box;
 }
 
-header .navigation li{
-list-style: none;
-margin: 0 10px;
-padding: 0;
+header .navigation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 10px 0;
 }
 
-header .navigation li a{
-color: white;
-text-decoration: none;
-font-weight: 500;
-letter-spacing: 1px;
-font-size: 20px;
+header .navigation li {
+  list-style: none;
+  margin: 0 10px;
+  padding: 0;
+}
+
+header .navigation li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 20px;
   text-shadow: 4px 4px 3px rgba(0, 0, 0, 1);
 }
 
-header .navigation li a:hover{
+header .navigation li a:hover {
   color: rgb(33, 136, 79);
 }
 
-header .search{
+header .search {
   position: relative;
   width: 300px;
   height: 40px;
 }
 
-header .search input{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-color: aliceblue;
-background: transparent;
-outline: none;
-border: 1px solid white;
-border-radius: 4px;
-padding: 0 10px 0 45px;
-box-sizing: border-box;
+header .search input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  color: aliceblue;
+  background: transparent;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 4px;
+  padding: 0 10px 0 45px;
+  box-sizing: border-box;
 }
 
-header .search input::placeholder{
-color: aliceblue;
+header .search input::placeholder {
+  color: aliceblue;
 }
 
-header .search .fa-search{
-position: absolute;
-top: 50%;
-transform: translateY(-50%);
-left: 10px;
-color: white;
-border-right: 1px solid white ;
-padding-right: 4px;
+header .search .fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  color: white;
+  border-right: 1px solid white;
+  padding-right: 4px;
 }
 
 @media (max-width: 991px) {
-header{
-  padding: 10px 20px;
-  flex-direction: column;
-  box-sizing: border-box;
+  header {
+    padding: 10px 20px;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
 }
-}
+
 @media (max-width: 600px) {
-header .search{
-  width: 100%;
-  box-sizing: border-box;
+  header .search {
+    width: 100%;
+    box-sizing: border-box;
+  }
 }
-}
+
 /*HEADER END*/
-
-/*FORM BEGIN*/
-.decor {
-   position: relative;
-   max-width: 400px;
-   margin: 273px auto 0;
-   margin-bottom: 60px;
-   background: #2b2c2c;
-   border-radius: 30px;
-}
-.form-left-decoration, .form-right-decoration {
-   content: "";
-   position: absolute;
-   width: 50px;
-   height: 20px;
-   background: orange;
-   border-radius: 20px;
-}
-.form-left-decoration {
-   bottom: 60px;
-   left: -30px;
-}
-.form-right-decoration {
-   top: 60px;
-   right: -30px;
-}
-.form-left-decoration:before, .form-left-decoration:after, .form-right-decoration:before, .form-right-decoration:after {
-   content: "";
-   position: absolute;
-   width: 50px;
-   height: 20px;
-   border-radius: 30px;
-   background: white;
-}
-.form-left-decoration:before {
-   top: -20px;
-}
-.form-left-decoration:after {
-   top: 20px;
-   left: 10px;
-}
-.form-right-decoration:before {
-   top: -20px;
-   right: 0;
-}
-.form-right-decoration:after {
-   top: 20px;
-   right: 10px;
-}
-.circle {
-   position: absolute;
-   bottom: 80px;
-   left: -55px;
-   width: 20px;
-   height: 20px;
-   border-radius: 50%;
-   background: white;
-}
-.form-inner {
-   padding: 50px;
-}
-.form-inner input, .form-inner textarea {
-   display: block;
-   width: 100%;
-   padding: 0 20px;
-   margin-bottom: 10px;
-   background: #E9EFF6;
-   line-height: 40px;
-   border-width: 0;
-   border-radius: 20px;
-   font-family: 'Roboto', sans-serif;
-}
-.form-inner input[type="submit"] {
-   margin-top: 30px;
-   background: orange;
-   border-bottom: 4px solid #d87d56;
-   color: white;
-   font-size: 14px;
-}
-.form-inner textarea {
-   resize: none;
-}
-.form-inner h3 {
-   margin-top: 0;
-   font-family: 'Roboto', sans-serif;
-   font-weight: 500;
-   font-size: 24px;
-   color: white;
-}
-
-.form-inner a {
-  text-decoration: none;
-  color: white;
-  margin-left: 30px;
-}
-
-.form-inner a:hover {
-  color: rgb(33, 136, 79);
-}
-/*FORM END*/
 
 /*CARD BEGIN*/
 .product-item {
@@ -217,34 +120,40 @@ header .search{
   font-family: "Open Sans";
   transition: .3s ease-in;
 }
+
 .product-item:hover {
   border-bottom: 5px solid orange;
   border-left: 5px solid orange;
   border-right: 5px solid orange;
   border-top: 5px solid orange;
 }
+
 .product-item img {
   display: block;
   height: 300px;
   width: 200px;
   width: 100%;
 }
+
 .product-list {
   background: #2b2c2c;
   padding: 15px 0;
 }
+
 .product-list h3 {
   font-size: 18px;
   font-weight: 400;
   color: white;
   margin: 0 0 10px 0;
 }
+
 .price {
   font-size: 16px;
   color: white;
   display: block;
   margin-bottom: 12px;
 }
+
 .button {
   text-decoration: none;
   display: inline-block;
@@ -256,6 +165,7 @@ header .search{
   line-height: 28px;
   transition: .3s ease-in;
 }
+
 .product-item:hover .button {
   background: orange;
 }
@@ -263,6 +173,7 @@ header .search{
 .products {
   display: flex;
 }
+
 /*CARD END*/
 
 /*FOOTER BEGIN*/
@@ -272,7 +183,7 @@ footer {
   min-height: 80%;
   background: #2b2c2c;
   margin: 0 auto;
-  margin-top: 200px;
+  margin-top: 100px;
   max-width: 100%;
   justify-content: space-between;
   display: flex;
@@ -291,20 +202,24 @@ footer span {
 }
 
 @keyframes bounce {
-	0%, 20%, 60%, 100% {
-		transform: translateY(0);
-		transform: translateY(0);
-	}
 
-	40% {
-		transform: translateY(-20px);
-		transform: translateY(-20px);
-	}
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+    transform: translateY(0);
+  }
 
-	80% {
-		transform: translateY(-10px);
-		transform: translateY(-10px);
-	}
+  40% {
+    transform: translateY(-20px);
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+    transform: translateY(-10px);
+  }
 }
 
 footer span:hover {
@@ -313,19 +228,7 @@ footer span:hover {
 
 /*FOOTER END*/
 
-
-
-/* Медиа-запрос для адаптивности – когда ширина
-    экрана 650px или меньше, ссылки будут друг над другом */
-@media screen and (max-width: 790px) {
-  
-
-  .functions-card {
-    display: block;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
+@media (max-width: 1000px) {
 
   footer {
     padding: 10px;
@@ -347,5 +250,5 @@ footer span:hover {
 @media screen and (max-width: 1000px) {
   .products {
     display: block;
-  }  
+  }
 }

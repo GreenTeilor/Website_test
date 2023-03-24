@@ -89,7 +89,7 @@ header .search .fa-search {
   padding-right: 4px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 650px) {
   header {
     padding: 10px 20px;
     flex-direction: column;
